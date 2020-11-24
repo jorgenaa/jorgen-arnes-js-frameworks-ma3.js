@@ -1,0 +1,22 @@
+.router {
+   padding: 16px 0;
+   background-color: $black;
+   &__nav {
+        display: flex;
+        justify-content: space-evenly;
+   }
+    &__link {
+    text-decoration: none;
+    font-family: $latoRegular;
+    color: $white;
+    &--hover {
+        &:hover {
+            color: $lightBlue;
+        }
+    }
+    &--active {
+        color: $lightBlue;
+    }
+}
+}
+

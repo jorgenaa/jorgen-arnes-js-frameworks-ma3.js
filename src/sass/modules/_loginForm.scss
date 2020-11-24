@@ -1,0 +1,37 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: 16px auto;
+	&__element {
+	margin: 10px 0;
+	display: flex;
+}
+	&__label {
+	flex: 1;
+	padding: 10px 5px;
+	font-family: $latoBold;
+}
+&__input {
+	flex: 6;
+	padding: 10px 5px;
+}
+	&__btn-submit {
+		font-family: $latoBold;
+		color: $white;
+		background-color: $green;
+		flex: 6;
+		padding: 10px 5px;
+		cursor: pointer;
+	}
+	&__error {
+		color: $red;
+	}
+}
+
+
+
+
+
+
+

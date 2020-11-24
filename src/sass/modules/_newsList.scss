@@ -1,0 +1,13 @@
+.newsList {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    &__text {
+        font-family: $robotoRegular;
+        line-height: 1.5;
+        letter-spacing: normal;
+        margin: 16px;
+    }
+}
