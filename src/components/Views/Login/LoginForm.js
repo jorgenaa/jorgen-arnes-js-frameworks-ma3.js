@@ -2,13 +2,13 @@ import React from 'react';
 import {useForm } from "react-hook-form";
 import * as yup from "yup";
 
-//import ErrorMessage from './ErrorMessage';
+import ErrorMessage from './ErrorMessage';
 
 const schema = yup.object().shape({
 	userName: yup.string().required("Username is required"),
     password: yup.string().required()
 	.min(4, "Password must be at least 4 characters long")
-	.max(30, "Password must be less than 10")
+	.max(30, "Password must be less than 30")
  });
 
 const LoginForm = () =>  {
@@ -25,13 +25,13 @@ const LoginForm = () =>  {
                 <div className="form__element">
                     <label className="form__label">Username</label>    
                     <input className="form__input" name="userName" placeholder="Enter your name" ref={register} />
-			        {errors.userName && <p>{errors.userName.message}</p>}            
+			        {errors.userName && <ErrorMessage>{errors.userName.message}</ErrorMessage>}            
                 </div>
 
                 <div className="form__element">
                     <label className="form__label">Password</label>
                     <input className="form__input" name="password" default="4" placeholder="Enter a password of min 4 characters" ref={register} />
-                    {errors.password && <p>{errors.password.message}</p>}
+                    {errors.password && <ErrorMessage>{errors.password.message}</ErrorMessage>}
                 </div>
 
                 <div className="form__element">

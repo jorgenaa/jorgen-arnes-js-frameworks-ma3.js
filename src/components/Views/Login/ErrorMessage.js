@@ -2,7 +2,7 @@ import React from 'react';
 
 const ErrorMessage = () => {
     return (
-       <p className="error"></p>
+       <p className="form__error"></p>
     );
 }
 
